@@ -108,7 +108,7 @@ public class FormPP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGenerateQuoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateQuoteActionPerformed
-        int quoteNumber = (int)(Math.random()*4+1);
+        int quoteNumber = (int)(Math.random()*8+1);
         switch (quoteNumber){
             case 1:
                 lblQuote.setText("One");
@@ -122,7 +122,19 @@ public class FormPP extends javax.swing.JFrame {
             case 4:
                 lblQuote.setText("Four");
                 break;
-                
+            case 5:
+                lblQuote.setText("Five");
+                break;
+            case 6:
+                lblQuote.setText("Six");
+                break;
+            case 7:
+                lblQuote.setText("Seven");
+                break;
+            case 8:
+                lblQuote.setText("Eight");
+                break;
+                                
         }
     }//GEN-LAST:event_btnGenerateQuoteActionPerformed
 
