@@ -40,7 +40,7 @@ public class FormPP extends javax.swing.JFrame {
 
         lblPrompt.setText("Click the generate quote button in order to be inspired");
 
-        lblQuoteImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\Administrator\\Pictures\\rainbow.png")); // NOI18N
+        lblQuoteImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/positivepractice/rainbow.png"))); // NOI18N
 
         btnGenerateQuote.setText("Generate Quote");
         btnGenerateQuote.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +108,7 @@ public class FormPP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGenerateQuoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateQuoteActionPerformed
-        int quoteNumber = (int)(Math.random()*8+1);
+        int quoteNumber = (int)(Math.random()*16+1);
         switch (quoteNumber){
             case 1:
                 lblQuote.setText("One");
@@ -134,7 +134,9 @@ public class FormPP extends javax.swing.JFrame {
             case 8:
                 lblQuote.setText("Eight");
                 break;
-                                
+            default:
+                lblQuote.setText("Other");
+                break;                
         }
     }//GEN-LAST:event_btnGenerateQuoteActionPerformed
 

@@ -103,7 +103,7 @@
         <Component class="javax.swing.JLabel" name="lblQuoteImage">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Administrator\Pictures\rainbow.png"/>
+              <Image iconType="3" name="/positivepractice/rainbow.png"/>
             </Property>
           </Properties>
         </Component>
